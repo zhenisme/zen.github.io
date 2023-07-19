@@ -51,9 +51,9 @@ const controls = [
 'download', // Display a download button with a custom link to an existing resource or custom URL that you specify in your options
 'fullscreen' // Toggle fullscreen
 ];
-const player = Plyr.setup('.js-player', { controls });
-const players = Array.from(document.querySelectorAll('.js-player')).map(p => new Plyr(p));
-const plyrs = Array.from(document.querySelectorAll('.js-plyr')).map(plyrs => new Plyr(plyrs));
+const player = Plyr.setup('video', { controls });
+const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+const plyrs = Array.from(document.querySelectorAll('video')).map(plyrs => new Plyr(plyrs));
 });
 /*]]>*/
 </script>
